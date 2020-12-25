@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <Spinner
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/checkout"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25dp"
+            android:text="Check In Date"
+            android:backgroundTint="@color/teal_700"
+            android:layout_margin="1dp"
+            android:datePickerMode="calendar"
+            android:layout_width="300dp"
+            android:layout_height="650dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/checkin"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_width="300dp"
+            android:layout_height="650dp"
+            android:layout_margin="1dp"
+            android:datePickerMode="calendar"
+            android:textSize="25dp"
+            android:text="Check Out Date"
+            android:backgroundTint="@color/teal_700"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/adults"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="No of adults"/>
+        <EditText
+
+            android:id="@+id/children"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:hint="No of Children"
+            android:layout_height="match_parent"/>
+        <Button
+            android:onClick="book"
+            android:id="@+id/book"
+            android:textSize="23dp"
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:text="Book Hotel"
+            android:backgroundTint="@color/teal_700"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
